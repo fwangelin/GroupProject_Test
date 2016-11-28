@@ -16,7 +16,7 @@ namespace AuctionRepository.Models
 		public string Name { get; set; }
 		public bool isUsed { get; set; }
 
-		public string ShowAuctionInfo()
+		public override string ToString()
 		{
 			return string.Format("{0} Price: {1} Category: {2} Is used: {3}",
 				Name,

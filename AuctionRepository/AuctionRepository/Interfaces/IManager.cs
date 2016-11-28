@@ -8,5 +8,6 @@ namespace AuctionRepository.Interfaces
 {
 	interface IManager
 	{
+		
 	}
 }

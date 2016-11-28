@@ -16,7 +16,7 @@ namespace AuctionRepository.Interfaces
 		 string Name { get; set; }
 		 bool isUsed { get; set; }
 
-		 string ShowAuctionInfo();
+		 string ToString();
 
 
 		}
