@@ -30,5 +30,11 @@ namespace AuctionRepository.Managers
 				Console.WriteLine(auctionList[i]);
 			}
 		}
+
+        public void AddAuctions()
+        {
+
+
+        }
     }
 }
