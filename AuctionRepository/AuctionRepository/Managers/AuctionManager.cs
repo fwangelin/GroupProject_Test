@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuctionRepository.Managers
 {
-    class AuctionManager : ISellable
+    class AuctionManager : IManager
     {
 
     }

@@ -44,9 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filters\Filter.cs" />
+    <Compile Include="Interfaces\IManager.cs" />
     <Compile Include="Interfaces\ISellable.cs" />
     <Compile Include="Managers\AuctionManager.cs" />
     <Compile Include="Models\AuctionItem.cs" />
+    <Compile Include="Models\Bathroom.cs" />
+    <Compile Include="Models\Bedroom.cs" />
+    <Compile Include="Models\Kitchen.cs" />
+    <Compile Include="Models\Livingroom.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
