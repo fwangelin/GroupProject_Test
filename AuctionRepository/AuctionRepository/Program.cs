@@ -14,9 +14,6 @@ namespace AuctionRepository
             Runtime runtime = new Runtime();
             runtime.Start();
             Person person = new Person();
-
-
-            
         }
     }
 }
