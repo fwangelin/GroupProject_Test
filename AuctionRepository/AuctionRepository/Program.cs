@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AuctionRepository.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,12 @@ namespace AuctionRepository
     {
         static void Main(string[] args)
         {
+            Runtime runtime = new Runtime();
+            runtime.Start();
+            Person person = new Person();
+
+
+            
         }
     }
 }
