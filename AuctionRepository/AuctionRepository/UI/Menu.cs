@@ -8,10 +8,8 @@ namespace AuctionRepository.UI
 {
     class Menu
     {
-
         public static void ShowStartMenu()
-        {
-            
+        {   
                 Console.Clear();
 
                 Console.WriteLine("Auction Repository");

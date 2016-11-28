@@ -23,13 +23,25 @@ namespace AuctionRepository.Managers
 
 		};
 
-		public void ShowAuctions()
+		public void ShowAuctions(int input)
 		{
-			for (int i = 0; i < auctionList.Count; i++)
-			{
-				Console.WriteLine(auctionList[i]);
-			}
+            if (input == 1)
+            {
+                foreach (var i in auctionList.Where(p => p.Category == Category.BathRoom))
+                {
+                    Console.WriteLine(i);
+                }
+            }
 		}
+
+        public void ShowAll()
+        {
+            for (int i = 0; i < auctionList.Count; i++)
+            {
+                Console.WriteLine(auctionList[i]);
+            }
+
+        }
 
         public void AddAuctions()
         {

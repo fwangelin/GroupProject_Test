@@ -7,6 +7,8 @@ namespace AuctionRepository
 {
     public class Runtime
     {
+        private int inputChoice;
+
         public void Start()
         {
 			AuctionManager auctionManager = new AuctionManager();
@@ -20,10 +22,24 @@ namespace AuctionRepository
 
                 ConsoleKey input = Console.ReadKey(true).Key;
 
+
+
                 switch (input)
                 {
                     case ConsoleKey.D1:
-						auctionManager.ShowAuctions();
+                        Console.WriteLine("Press to show bathroom.");
+
+                        try
+                        {
+                            inputChoice = int.Parse(Console.ReadLine());
+                        }
+
+                        catch(FormatException)
+                        {
+                            Console.WriteLine("Insert a number: ");
+                        }
+
+						auctionManager.ShowAuctions(inputChoice);
 						Console.ReadKey(true);
                         break;
                     case ConsoleKey.D2:
