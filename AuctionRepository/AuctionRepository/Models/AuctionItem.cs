@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace AuctionRepository.Models
 {
     public enum Category { Kitchen = 1, LivingRoom, BathRoom, BedRoom}
-    class AuctionItem
+
+	public class AuctionItem
     {
         public double Price { get; set; }
         public Category Category { get; set; }
