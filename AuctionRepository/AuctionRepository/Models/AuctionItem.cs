@@ -14,7 +14,7 @@ namespace AuctionRepository.Models
 		public double Price { get; set; }
 		public Category Category { get; set; }
 		public string Name { get; set; }
-		public bool isUsed { get; set; }
+		public string ItemUsed { get; set; }
 
 		public override string ToString()
 		{
@@ -22,7 +22,7 @@ namespace AuctionRepository.Models
 				Name,
 				Price,
 				Category,
-				isUsed
+				ItemUsed
 				);
 		}
 	}

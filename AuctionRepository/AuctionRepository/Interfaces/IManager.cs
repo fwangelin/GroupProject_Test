@@ -9,7 +9,10 @@ namespace AuctionRepository.Interfaces
 	interface IManager
 	{
         void ShowAuctions(int input);
-        void AddAuctions();
+        void AddBathroomAuctions(string nameText, string used, double price);
+		void AddBedroomAuctions();
+		void AddLivingroomAuctions();
+		void AddKitchenAuctions();
 
     }
 }

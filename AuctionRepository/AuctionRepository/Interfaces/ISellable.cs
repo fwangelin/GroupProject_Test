@@ -14,7 +14,7 @@ namespace AuctionRepository.Interfaces
 		 double Price { get; set; }
 		 Category Category { get; set; }
 		 string Name { get; set; }
-		 bool isUsed { get; set; }
+		 string ItemUsed { get; set; }
 
 		 string ToString();
 

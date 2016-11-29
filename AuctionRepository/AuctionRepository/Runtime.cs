@@ -43,6 +43,15 @@ namespace AuctionRepository
 						Console.ReadKey(true);
                         break;
                     case ConsoleKey.D2:
+						Console.WriteLine("Add Bathroom");
+						Console.WriteLine("Type in product name");
+						string nameInput = Console.ReadLine();
+						Console.WriteLine("Type in price");
+						double price = double.Parse(Console.ReadLine());
+						Console.WriteLine("Type in if the item is used");
+						string usedInput = Console.ReadLine();
+						auctionManager.AddBathroomAuctions(nameInput, usedInput, price);
+						Console.ReadKey(true);
                         break;
                     case ConsoleKey.D3:
                         break;
