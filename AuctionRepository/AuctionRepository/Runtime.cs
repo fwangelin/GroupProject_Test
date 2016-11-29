@@ -8,7 +8,7 @@ namespace AuctionRepository
     public class Runtime
     {
         private int inputChoice;
-
+        
         public void Start()
         {
 			AuctionManager auctionManager = new AuctionManager();
