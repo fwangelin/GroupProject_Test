@@ -9,7 +9,7 @@ namespace AuctionRepository.Interfaces
 {
 	public enum Category { Kitchen = 1, LivingRoom, BathRoom, BedRoom }
 
-	interface ISellable
+	public interface ISellable
     {
 		 double Price { get; set; }
 		 Category Category { get; set; }

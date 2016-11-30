@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuctionRepository.Models
 {
-	class Bathroom: AuctionItem
+	public class Bathroom: AuctionItem
 	{
 	}
 }
