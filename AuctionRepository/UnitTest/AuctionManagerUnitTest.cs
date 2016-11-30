@@ -1,8 +1,5 @@
 ﻿using System;
-<<<<<<< HEAD
 using AuctionRepository.Models;
-=======
->>>>>>> b9651272485bb7e7e9ce47df850d123e523f8793
 using AuctionRepository.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AuctionRepository.Managers;
@@ -14,7 +11,7 @@ namespace UnitTest
     public class AuctionManagerUnitTest
     {
         [TestMethod]
-<<<<<<< HEAD
+
         public void AddBathroomToListTest()
         {
             var manager = new AuctionManager();
@@ -49,7 +46,7 @@ namespace UnitTest
             manager.AddKitchenAuctions("string1", "string2", 78.97);
             Assert.AreEqual(1, manager.auctionList.Count);
 
-=======
+
         public void AddBathRoomAuctionListTest()
         {
 
@@ -63,7 +60,7 @@ namespace UnitTest
             //Assert
             Assert.AreEqual(manager.auctionList[0].Category = Category.BathRoom, manager.auctionList[0].Category = Category.BathRoom);
             
->>>>>>> b9651272485bb7e7e9ce47df850d123e523f8793
+
         }
     }
 }

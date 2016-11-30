@@ -1,4 +1,5 @@
-﻿using AuctionRepository.Interfaces;
+﻿using AuctionRepository.Filters;
+using AuctionRepository.Interfaces;
 using AuctionRepository.Models;
 using System;
 using System.Collections.Generic;
@@ -83,6 +84,15 @@ namespace AuctionRepository.Managers
             newKitchen.Category = Category.Kitchen;
             newKitchen.ItemUsed = used;
             auctionList.Add(newKitchen);
+        }
+
+        public void PrintWhereFilters(ListFilters filterList)
+        {
+            foreach (var auctionItem in auctionList)
+            {
+                if(filterList(ISellable))
+                    Console.WriteLine(auctionItem);
+            }
         }
 	}
 }

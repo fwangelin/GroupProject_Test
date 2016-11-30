@@ -72,6 +72,7 @@ namespace AuctionRepository
 
         public void FilterMenu()
         {
+            
             var filter = new Filter();
 
             bool loop = true;
@@ -85,7 +86,8 @@ namespace AuctionRepository
                 switch (input)
                 {
                     case ConsoleKey.D1:
-
+                        ListFilters IsExpensive = new ListFilters(Filter.IsExpensive);
+                        break;
                 }
 
             }
