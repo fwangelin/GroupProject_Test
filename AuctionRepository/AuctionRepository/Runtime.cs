@@ -2,6 +2,7 @@
 using System.Threading;
 using AuctionRepository.UI;
 using AuctionRepository.Managers;
+using AuctionRepository.Filters;
 
 namespace AuctionRepository
 {
@@ -71,7 +72,23 @@ namespace AuctionRepository
 
         public void FilterMenu()
         {
+            var filter = new Filter();
 
+            bool loop = true;
+
+            while (loop)
+            {
+                Menu.FilterMenuGraphics();
+
+                ConsoleKey input = Console.ReadKey(true).Key;
+
+                switch (input)
+                {
+                    case ConsoleKey.D1:
+
+                }
+
+            }
         }
     }
 }

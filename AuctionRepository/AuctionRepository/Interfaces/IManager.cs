@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuctionRepository.Interfaces
 {
-	interface IManager
+	public interface IManager
 	{
         void ShowAuctions(int input);
         void AddBathroomAuctions(string nameText, string used, double price);
