@@ -54,14 +54,24 @@ namespace AuctionRepository
 						Console.ReadKey(true);
                         break;
                     case ConsoleKey.D3:
+                        // Edit products
                         break;
                     case ConsoleKey.D4:
+
+                        break;
+                    case ConsoleKey.D5:
+                        //Filters
                         break;
                     case ConsoleKey.Escape:
                         isLoop = false;
                         break;
                 }
             }
+        }
+
+        public void FilterMenu()
+        {
+
         }
     }
 }

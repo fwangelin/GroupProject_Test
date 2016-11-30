@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AuctionRepository.Managers
 {
-    class AuctionManager : IManager
+   public class AuctionManager : IManager
     {
 		List<ISellable> auctionList = new List<ISellable>
 		{

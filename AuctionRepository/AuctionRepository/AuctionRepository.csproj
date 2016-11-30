@@ -62,12 +62,6 @@
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UnitTest\UnitTest.csproj">
-      <Project>{3e600da2-d065-4450-a5b4-84927db5a6e9}</Project>
-      <Name>UnitTest</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
