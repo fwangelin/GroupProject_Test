@@ -61,7 +61,7 @@ namespace AuctionRepository
 
                         break;
                     case ConsoleKey.D5:
-                        //Filters
+                        FilterMenu();
                         break;
                     case ConsoleKey.Escape:
                         isLoop = false;
@@ -72,13 +72,14 @@ namespace AuctionRepository
 
         public void FilterMenu()
         {
-            
+            var manager = new AuctionManager();   
             var filter = new Filter();
 
             bool loop = true;
 
             while (loop)
             {
+                
                 Menu.FilterMenuGraphics();
 
                 ConsoleKey input = Console.ReadKey(true).Key;
@@ -86,7 +87,10 @@ namespace AuctionRepository
                 switch (input)
                 {
                     case ConsoleKey.D1:
+                        Console.Clear();
                         ListFilters IsExpensive = new ListFilters(Filter.IsExpensive);
+                        manager.PrintWhereFilters(IsExpensive);
+                        Console.ReadKey(true);
                         break;
                 }
 
