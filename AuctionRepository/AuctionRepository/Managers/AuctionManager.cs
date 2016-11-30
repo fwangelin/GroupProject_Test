@@ -51,6 +51,8 @@ namespace AuctionRepository.Managers
 			newBathroom.Category = Category.BathRoom;
 			newBathroom.ItemUsed = used;
 			auctionList.Add(newBathroom);
+
+
 		}
 
 		public void AddBedroomAuctions(string nameText, string used, double price)
